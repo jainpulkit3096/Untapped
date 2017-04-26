@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ff9e49a">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEARBY"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="192dp"
+        android:onClick="nearby"
+        android:background="#b06c1a"
+        android:textColor="#fbf9f9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRIENDS"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:width="191dp"
+        android:background="#b06c1a"
+        android:allowUndo="false"
+        android:textColor="#fbf9f9" />
+
+    <LinearLayout
+        android:id="@+id/nearby"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2">
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2">
+    </LinearLayout>
+
+
+</RelativeLayout>
